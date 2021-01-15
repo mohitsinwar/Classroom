@@ -66,8 +66,10 @@ class CoursesDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 def about(request):
     return render(request, 'courses/about.html', {'title': 'About'})
 
+
 def homepage(request):
     return render(request,'courses/homepage.html')
+
 
 def accepted(request):
     return render(request, 'courses/added_to_course.html')
